@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Меню Green Lounge</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta name="theme-color" content="#000000" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/three.r119.min.js"></script>
+    <script src="js/vanta.fog.min.js"></script>
+    <script>
+      $(window).on('load', function () {
+        window.setTimeout(function () {
+          $('.preloader-block img').addClass('hide').end().delay(0);
+          $('.text').addClass('hide').end().delay(0);
+        }, 1500);
+        window.setTimeout(function () {
+          $('.preloader').addClass('hide').end().delay(0);
+          $('body').removeClass('noscroll').end().delay(0);
+        }, 2000);
+        window.setTimeout(function () {
+          $('canvas').remove();
+          $('.preloader').remove();
+        }, 3500);
+      });
+    </script>
+  </head>
+  <body class="noscroll">
+    <div class="preloader active">
+      <div class="preloader-block">
+        <img src="img/logo.svg" alt="" />
+        <h2 class="text">GREEN LOUNGE</h2>
+        <span class="text">Сеть Lounge баров</span>
+      </div>
+    </div>
+    <script>
+      VANTA.FOG({
+        el: '.preloader',
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        highlightColor: 0xe1dfdb,
+        midtoneColor: 0x2a2a2a,
+        lowlightColor: 0xcee8db,
+        baseColor: 0x535753,
+        speed: 2.0,
+        zoom: 2.0,
+      });
+    </script>
+    <div class="menu-block1">
+      <img class="menu-block1__logo" src="img/logo.svg" alt="" />
+      <h1>GREEN LOUNGE</h1>
+      <span>Сеть Lounge баров</span>
+      <b>Hookahs CARD</b>
+      <div class="menu-block1__arrow">
+        <span>ЛИСТАЙ</span>
+        <img src="img/arrow-bot.svg" alt="" />
+      </div>
+    </div>
+    <div class="menu-block2">
+      <div class="header-block menu-hookahs">
+        <h2 class="text-title">Кальян</h2>
+        <span class="text-back">Hookahs</span>
+      </div>
+      <table class="menu-hookahs__table1">
+        <tr>
+          <th class="text-subtitle">Кальян классический</th>
+        </tr>
+        <tr class="text-opacity">
+          <td>Стандарт</td>
+          <td>1 200</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>WTO / MIX</td>
+          <td>1 400</td>
+        </tr>
+      </table>
+      <table class="menu-hookahs__table2">
+        <tr>
+          <th class="text-subtitle">Кальян на фрукте</th>
+        </tr>
+        <tr class="text-opacity">
+          <td>Грейпфрут</td>
+          <td>1 500</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Яблоко</td>
+          <td>1 500</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Апельсин</td>
+          <td>1 500</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Ананас</td>
+          <td>2 000</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Гранат</td>
+          <td>2 000</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Дыня</td>
+          <td>2 600</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Арбуз</td>
+          <td>2 600</td>
+        </tr>
+      </table>
+      <table class="menu-hookahs__table3">
+        <tr>
+          <th class="text-subtitle">Добавки</th>
+        </tr>
+        <tr class="text-opacity">
+          <td>Сок</td>
+          <td>200</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Молоко</td>
+          <td>200</td>
+        </tr>
+      </table>
+      <span class="text-orange">АКЦИЯ</span>
+      <span class="menu-hookahs__stock text-green_weight">2 кальяна за 2 000 ₽</span>
+      <div class="text-opacity menu-hookahs__description">
+        При единовременном заказе двух кальянов в <br />
+        любое время суток
+      </div>
+      <div class="header-block menu-tea">
+        <h2 class="text-title">Чай</h2>
+        <span class="text-back">Tea</span>
+      </div>
+    </div>
+    <div class="menu-block3">
+      <table class="menu-tea__table1">
+        <tr>
+          <th class="text-subtitle">Классический<span class="text-green_light">0,5 / 0,9</span></th>
+        </tr>
+        <tr class="text-opacity">
+          <td>Сенча</td>
+          <td>300 / 400</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Изысканный бергамот</td>
+          <td>300 / 400</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Королевский Каркаде</td>
+          <td>300 / 400</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Гречишный чай</td>
+          <td>400 / -</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Ромашковый</td>
+          <td>400 / -</td>
+        </tr>
+      </table>
+      <table class="menu-tea__table2">
+        <tr>
+          <th class="text-subtitle">Улун<span class="text-green_light">0,5 / 0,9</span></th>
+        </tr>
+        <tr class="text-opacity">
+          <td>Молочный Улун</td>
+          <td>400 / 500</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Жень - Шень Улун</td>
+          <td>400 / 500</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Улун медовая дыня - карамель</td>
+          <td>400 / 500</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Улун персик</td>
+          <td>400 / 500</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Улун сгущенное молоко</td>
+          <td>400 / 500</td>
+        </tr>
+      </table>
+      <table class="menu-tea__table3">
+        <tr>
+          <th class="text-subtitle">
+            Фруктовый чай<span class="text-green_light">0,5 / 0,9</span>
+          </th>
+        </tr>
+        <tr class="text-opacity">
+          <td>Черный чай “Таёжный”</td>
+          <td>400 / 550</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Айва с персиком</td>
+          <td>400 / 550</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Ночной Макао</td>
+          <td>400 / 550</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Экзотика фруктов</td>
+          <td>400 / 550</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Зеленый с кактусом</td>
+          <td>400 / 550</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Лимон с имбирем</td>
+          <td>400 / 550</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Нахальный фрукт</td>
+          <td>400 / 550</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Смородина - брусника</td>
+          <td>400 / 550</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Яблоко с корицей</td>
+          <td>400 / 550</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Персидские сказки</td>
+          <td>400 / 550</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Черный с корицей и бадьяном</td>
+          <td>400 / 550</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Глинтвейн</td>
+          <td>400 / 550</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Апельсин и корица</td>
+          <td>400 / 550</td>
+        </tr>
+      </table>
+    </div>
+    <div class="menu-block4">
+      <div class="header-block menu-cakes">
+        <h2 class="text-title two">Пирожные</h2>
+        <span class="text-back">Cakes</span>
+      </div>
+      <table class="menu-cakes__table1">
+        <tr class="text-opacity">
+          <td>Корзиночка малинка <span class="text-green_light">&nbsp; 90 гр.</span></td>
+          <td>350</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Корзиноча голубика <span class="text-green_light">&nbsp; 90 гр.</span></td>
+          <td>350</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Эклер “Ваниль” <span class="text-green_light">&nbsp; 60 гр.</span></td>
+          <td>150</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Пирожное “3 шоколада” <span class="text-green_light">&nbsp; 130 гр.</span></td>
+          <td>350</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Пирожное “Манго” <span class="text-green_light">&nbsp; 130 гр.</span></td>
+          <td>350</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Пирожное “Павлова” (мал.) <span class="text-green_light">&nbsp; 90 гр.</span></td>
+          <td>350</td>
+        </tr>
+      </table>
+    </div>
+    <!-- <div class="stick one"></div> -->
+    <div class="menu-block5">
+      <div class="header-block menu-lemonade">
+        <h2 class="text-title two">Лимонады</h2>
+        <span class="text-back two">Lemonade</span>
+      </div>
+      <table class="menu-lemonade__table1">
+        <tr>
+          <th class="text-subtitle text-green_light">0,3 / 1,0</th>
+        </tr>
+        <tr class="text-opacity">
+          <td>Классический</td>
+          <td>250 / 500</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Ягодный</td>
+          <td>250 / 500</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Маракуйя - Апельсин</td>
+          <td>250 / 500</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Киви</td>
+          <td>250 / 500</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Мохито</td>
+          <td>250 / 500</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Малина - Маракуйя</td>
+          <td>250 / 500</td>
+        </tr>
+      </table>
+    </div>
+    <div class="menu-block6">
+      <div class="header-block menu-milkshakes">
+        <h2 class="text-title two">Милкшейки</h2>
+        <span class="text-back two">Milkshakes</span>
+      </div>
+      <table class="menu-milkshakes__table1">
+        <tr>
+          <th class="text-subtitle text-green_light">0,3</th>
+        </tr>
+        <tr class="text-opacity">
+          <td>Шоколадный</td>
+          <td>300</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Ванильный</td>
+          <td>300</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Банановый</td>
+          <td>300</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Карамельный</td>
+          <td>300</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Клубничный</td>
+          <td>300</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Малиновый</td>
+          <td>300</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Вишневый</td>
+          <td>300</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Кокосовый</td>
+          <td>300</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Сникерс</td>
+          <td>300</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Орео</td>
+          <td>350</td>
+        </tr>
+      </table>
+    </div>
+    <div class="menu-block7">
+      <div class="header-block menu-drinks">
+        <h2 class="text-title two">Холодные напитки</h2>
+        <span class="text-back two">Cold Drinks</span>
+      </div>
+      <table class="menu-drinks__table1">
+        <tr>
+          <th class="text-subtitle">Безалкогольные напитки</th>
+        </tr>
+        <tr class="text-opacity">
+          <td>Вода Nestle <span class="text-green_light">&nbsp; 0,5</span></td>
+          <td>100</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Газировка в ассортименте <span class="text-green_light">&nbsp; 0,25</span></td>
+          <td>150</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Ред - Бул ж/б <span class="text-green_light">&nbsp; 0,33</span></td>
+          <td>250</td>
+        </tr>
+      </table>
+      <table class="menu-drinks__table2">
+        <tr>
+          <th class="text-subtitle">Соки</th>
+        </tr>
+        <tr class="text-opacity">
+          <td>В ассортименте <span class="text-green_light">&nbsp; 0,32 / 1,0</span></td>
+          <td>80 / 300</td>
+        </tr>
+        <tr class="text-opacity">
+          <td class="flex-td">
+            <span class="flex-block">
+              <span>Свежевыжетый сок:</span>
+              <span class="text-orange">морковь, яблоко, апельсин</span>
+            </span>
+            <span class="text-green_light">&nbsp; 0,5</span>
+          </td>
+          <td>350</td>
+        </tr>
+      </table>
+    </div>
+    <div class="menu-block8">
+      <div class="header-block menu-beer">
+        <h2 class="text-title two">Пиво</h2>
+        <span class="text-back two">Beer</span>
+      </div>
+      <table class="menu-beer__table1">
+        <tr>
+          <th class="text-subtitle">Разливное пиво</th>
+        </tr>
+        <tr class="text-opacity">
+          <td>Bud <span class="text-green_light">&nbsp; 0,5</span></td>
+          <td>300</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Spaten <span class="text-green_light">&nbsp; 0,5</span></td>
+          <td>400</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Leffe Brune <span class="text-green_light">&nbsp; 0,5</span></td>
+          <td>450</td>
+        </tr>
+      </table>
+      <div class="menu-stock">
+        <div class="menu-stock__text">
+          <span class="text-opacity">АКЦИЯ</span>
+          <span class="text-green_weight">1 + 1 = &nbsp;3</span>
+        </div>
+        <ul class="menu-stock__date">
+          <li>ПН</li>
+          <li>ВТ</li>
+          <li>СР</li>
+          <li>ЧТ</li>
+          <li>ПТ</li>
+          <li>СБ</li>
+          <li>ВС</li>
+        </ul>
+      </div>
+      <table class="menu-beer__table2">
+        <tr>
+          <th class="text-subtitle">Бутылочное пиво</th>
+        </tr>
+        <tr class="text-opacity">
+          <td>Gösser ж/б <span class="text-green_light">&nbsp; 0,48</span></td>
+          <td>200</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Guinness <span class="text-green_light">&nbsp; 0,48</span></td>
+          <td>350</td>
+        </tr>
+      </table>
+      <table class="menu-beer__table3">
+        <tr>
+          <th class="text-subtitle">Безалкогольное пиво</th>
+        </tr>
+        <tr class="text-opacity">
+          <td>Clausthaler (импорт) б/а <span class="text-green_light">&nbsp; 0,33</span></td>
+          <td>200</td>
+        </tr>
+      </table>
+      <table class="menu-beer__table3">
+        <tr>
+          <th class="text-subtitle">Сидр</th>
+        </tr>
+        <tr class="text-opacity">
+          <td>Chester в ассортименте</td>
+          <td>300</td>
+        </tr>
+      </table>
+    </div>
+    <div class="menu-block9">
+      <div class="header-block menu-snacks">
+        <h2 class="text-title two">Закуски</h2>
+        <span class="text-back two">Snacks</span>
+      </div>
+      <table class="menu-snacks__table1">
+        <tr>
+          <th class="text-subtitle">Чипсы</th>
+        </tr>
+        <tr class="text-opacity">
+          <td>Pringles (паприка/сметана/сыр)</td>
+          <td>150</td>
+        </tr>
+      </table>
+      <table class="menu-snacks__table2">
+        <tr>
+          <th class="text-subtitle">Орехи</th>
+        </tr>
+        <tr class="text-opacity">
+          <td>Арахис в специях <span class="text-green_light">&nbsp; 70г</span></td>
+          <td>150</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Арахис с морской солью <span class="text-green_light">&nbsp; 70г</span></td>
+          <td>150</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Фисташки <span class="text-green_light">&nbsp; 70г</span></td>
+          <td>150</td>
+        </tr>
+      </table>
+    </div>
+    <div class="menu-block10">
+      <div class="header-block menu-rules">
+        <h2 class="text-title two">Правила</h2>
+        <span class="text-back two">Rules</span>
+      </div>
+      <ol class="menu-rules__ol text-opacity">
+        <li><span>1.</span> В заведение запрещается проносить безалкогольнгые напитки.</li>
+        <li>
+          <span>2.</span>На территории заведения запрещается <br />
+          курить сигареты, а также употреблять наркотические вещества.
+        </li>
+        <li><span>3.</span>Вход с крупными домашними животными запрещён.</li>
+        <li>
+          <span>4.</span>Пробковый сбор: вино, шампанское, вермуты до 1 л. - 150 рублей; крепкий
+          алкоголь (более 20%) до 1 л. - 300 рублей.
+        </li>
+        <li><span>5.</span>Предъявление удостоверения личности - обязательно.</li>
+        <li>
+          <span>6.</span>Заведение оставляет за собой право без объяснений причины отказать в
+          обслуживании.
+        </li>
+      </ol>
+      <div class="menu-rules__wrapper">
+        <div class="menu-rules__block">
+          <img src="img/rules-1.svg" alt="" />
+          <span class="text-opacity">1 - 3 человека в компании - 1 кальян</span>
+        </div>
+        <div class="menu-rules__block">
+          <img src="img/rules-2.svg" alt="" />
+          <span class="text-opacity">4-6 человек в компании - 2 кальяна</span>
+        </div>
+        <div class="menu-rules__block">
+          <img src="img/rules-3.svg" alt="" />
+          <span class="text-opacity">1 кальян на фрукте - для компании <br />до 5 человек </span>
+        </div>
+      </div>
+      <div class="header-block menu-crash">
+        <h2 class="text-title two">Краш меню</h2>
+        <span class="text-back two">Crash menu</span>
+      </div>
+    </div>
+    <div class="menu-block11">
+      <table class="menu-crash__table1">
+        <tr class="text-opacity">
+          <td>Порча настольных игр</td>
+          <td>750</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Порча посуды</td>
+          <td>200</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Порча дивана</td>
+          <td>5000</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Сломать пуфик</td>
+          <td>3000</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Порча колбы от кальяна</td>
+          <td>2000</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Драка в заведении</td>
+          <td>5000</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Порча игровой консоли</td>
+          <td>20000</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Сломать джойстик</td>
+          <td>5000</td>
+        </tr>
+        <tr class="text-opacity">
+          <td>Почра стола</td>
+          <td>3000</td>
+        </tr>
+      </table>
+      <span class="menu-crash__red text-red">(запись с видеокамер в подарок)</span>
+      <div class="header-block menu-question">
+        <h2 class="text-title two">
+          Не <br />
+          понравился <br />
+          кальян?
+        </h2>
+        <i class="text-opacity"
+          >Сообщите в первые <br />
+          15 минут!</i
+        >
+        <b class="text-red"
+          >СЕАНС КУРЕНИЯ КАЛЬЯНА <br />
+          2 ЧАСА</b
+        >
+        <img src="img/clock.svg" alt="" />
+      </div>
+      <div class="menu-question__last">
+        <span class="text-subtitle">Остались вопросы?</span>
+        <span class="text-opacity">Позови официанта!</span>
+      </div>
+      <div class="menu-footer">
+        <img src="img/logo.svg" alt="" />
+        <span class="menu-footer__name">Сеть Lounge баров</span>
+        <span class="menu-footer__date">Ассортимент актуален на 26/05/2021</span>
+      </div>
+    </div>
+  </body>
+</html>
